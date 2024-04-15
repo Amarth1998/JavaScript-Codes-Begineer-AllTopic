@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+city:
+     <input type="text" value="bhopal"   id="a">
+     <button onclick="mycity()">click>>>>>>>>>></button>
+
+    &nbsp;
+    <button onclick="mycity2()">click<<<<<<<<<<</button>
+     <input type="text"  id="b">
+   
+
+<script>
+    function mycity(){
+        document.getElementById("b").value=""
+        document.getElementById("a").value="bhopal"
+    }
+
+    function mycity2(){
+        document.getElementById("b").value="bhopal"
+        document.getElementById("a").value=""
+    }
+</script>
+
+</body>
+</html>

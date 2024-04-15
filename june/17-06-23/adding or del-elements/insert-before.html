@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Click here</button>
+    <div id="box1">
+        <h1 id="head1">ThIS IS JAVASCRIPT CLASS</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, libero! Ducimus animi laboriosam vel perferendis odio laudantium pariatur! Aliquid labore quae beatae soluta perferendis, enim nostrum quas nobis laudantium quisquam.
+        <h1 id="head2">SECOND PARA</h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, qui. Iusto dignissimos illo eos blanditiis accusantium minima nam, voluptatem quis.
+    </div>
+    <script >
+        
+document.getElementById('btn1').addEventListener("click",display1)
+function display1(){
+    let myobj=document.createElement("h1");
+    myobj.innerHTML="hi this is sunil's here !!";
+    let myele=document.getElementById('head2');
+    document.getElementById("box1").insertBefore(myobj,myele);
+}
+    </script>
+</body>
+</html>

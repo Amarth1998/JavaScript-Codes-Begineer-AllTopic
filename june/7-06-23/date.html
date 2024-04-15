@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    first way
+
+<script>
+let mydate= new Date();
+document.write("<h1>",mydate); //Thu Jun 08 2023 13:33:16 GMT+0530 (India Standard Time)
+</script> -->
+
+    second way
+<script>
+    let mydate= new Date(1999,7,15,4,30,40,70);     //max 7 min 2 arguments     // 1 sec=1000 milliseconds
+    document.write("<h1>",mydate); //Sun Aug 15 1999 04:30:40 GMT+0530 (India Standard Time)
+</script>
+
+    third way
+     <script>
+        let mydate= new Date(86400000*365);      //86400000 one day milisecond
+        document.write("<h1>",mydate);
+    </script>
+
+    <!-- fourth way -->
+    <script>
+        let date= new Date("1999-08-15");    // ISO 
+        let date1= new Date("08/15/1999");     
+        let date2= new Date("aug 15 1999");     
+        let date3= new Date("15 aug 1999");     
+        document.write("<h1>",date);
+        document.write("<h1>",date1);
+        document.write("<h1>",date2);
+        document.write("<h1>",date3);
+            //all output:
+          //  Sun Aug 15 1999 05:30:00 GMT+0530 (India Standard Time)
+    </script>
+</body>
+</html>

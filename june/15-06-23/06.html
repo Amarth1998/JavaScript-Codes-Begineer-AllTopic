@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 220px;
+            height: 320px;
+            background-color: grey;
+            border: 5px solid black;
+            align-items: center;
+        }
+        #mytext{
+            width: 211px;
+            height: 35px;
+            border: 3px solid black;
+            background-color: aqua;
+            margin-bottom: 10px;
+        }
+        input{
+            width: 50px;
+            height: 50px;
+            font-size: larger;
+        }
+        #beql{
+            width: 160px;
+            font-size: xx-large;
+        }
+        
+    </style>
+    <script>
+        function f1(){
+            a=document.getElementById('mytext').value;
+            b=a.slice(0,-1);
+            document.getElementById('mytext').value=b;
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+        <input type="text" id="mytext">
+        <br>
+        <input type="button" value="1" id="b1" onclick="document.getElementById('mytext').value+=document.getElementById('b1').value">
+        <input type="button" value="2" id="b2" onclick="document.getElementById('mytext').value+=document.getElementById('b2').value">
+        <input type="button" value="3" id="b3" onclick="document.getElementById('mytext').value+=document.getElementById('b3').value">
+        <input type="button" value="+" id="b+" onclick="document.getElementById('mytext').value+=document.getElementById('b+').value">
+        <input type="button" value="4" id="b4" onclick="document.getElementById('mytext').value+=document.getElementById('b4').value">
+        <input type="button" value="5" id="b5" onclick="document.getElementById('mytext').value+=document.getElementById('b5').value">
+        <input type="button" value="6" id="b6" onclick="document.getElementById('mytext').value+=document.getElementById('b6').value">
+        <input type="button" value="-" id="b-" onclick="document.getElementById('mytext').value+=document.getElementById('b-').value">
+        <input type="button" value="7" id="b7" onclick="document.getElementById('mytext').value+=document.getElementById('b7').value">
+        <input type="button" value="8" id="b8" onclick="document.getElementById('mytext').value+=document.getElementById('b8').value">
+        <input type="button" value="9" id="b9" onclick="document.getElementById('mytext').value+=document.getElementById('b9').value">
+        <input type="button" value="" id="b" onclick="document.getElementById('mytext').value+=document.getElementById('b*').value">
+        <input type="button" value="0" id="b0" onclick="document.getElementById('mytext').value+=document.getElementById('b0').value">
+        <input type="button" value="." id="b." onclick="document.getElementById('mytext').value+=document.getElementById('b.').value">
+        <input type="button" value="C" id="bc" onclick="document.getElementById('mytext').value=''">
+        <input type="button" value="/" id="b/" onclick="document.getElementById('mytext').value+=document.getElementById('b/').value">
+        <input type="button" value="BCK" id="bck" onclick="f1();">
+        <input type="button" value="=" id="beql" onclick="document.getElementById('mytext').value=eval(document.getElementById('mytext').value)">
+    </div>
+</body>
+</html>

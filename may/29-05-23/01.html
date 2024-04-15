@@ -1,0 +1,81 @@
+                          arrow function
+
+arrow function were introduced in 2015
+before arrow function  
+hello=function(){ return "hello wolld";}
+
+with arrow function 
+hello=()=>{ return "hello wolrd"} 
+
+
+arrow function return value by defalut:
+hello=()=>"hello wolrd";
+note:this works only if the function have only one parameter
+
+
+if you have paramter , you can pass inside the parentheses
+arrow function with parameter
+hello=(val)=>"hello"+ val
+
+infact if you have only one parameter , you can skip parentheses as well.
+arrow function without parentheses
+hello=val=>"hello"+ val;
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<h1 id="demo"> welcome to cyborm </h1>
+<button onclick="display()">click me</button>
+
+<h1 id="demo2"> welcome to cyborm </h1>
+<button onclick="display2()">click me</button>
+
+<h1 id="demo3"> welcome to cyborm </h1>
+<button onclick="display3()">click me</button>
+
+<h1 id="demo4"> welcome to cyborm </h1>
+<button onclick="display4()">click me</button>
+
+<h1 id="demo5"> welcome to cyborm </h1>
+<button onclick="display5()">click me</button>
+<script>
+    // old function 
+function display(){
+        myname=function (){return "hello world"}
+        document.getElementById("demo").innerHTML=myname();}
+ 
+        // arrow function
+function display2 (){      
+     const name=()=>{return "hello world"}
+    document.getElementById("demo2").innerHTML=name();
+}
+
+//this run only if arrow function have only one parameter
+function display3 (){
+    const  name3=()=>"hello world";
+    document.getElementById("demo3").innerHTML=name3();
+}
+
+
+ // arrow function with parameter
+function display4 (){
+    const  name4=(name,surname)=>"hello world"+" "+name+" "+surname;
+    document.getElementById("demo4").innerHTML=name4("amarth","patel");
+}
+
+
+ // arrow function with single parameter you can leave parantheses
+ function display5 (){
+    const  name5=name=>"hello world"+" "+name;
+    document.getElementById("demo5").innerHTML=name5("amarth");
+}
+</script>
+
+
+</body>
+</html>

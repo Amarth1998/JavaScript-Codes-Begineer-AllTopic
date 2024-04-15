@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+      var str1 = "Hello we are cybrom";
+      document.getElementById("demo").innerHTML =
+        "<h1>" + str1 + " " + typeof str1 + "</h1>"; //Hello we are cybrom string
+      var a = str1.split(" ");
+      document.getElementById("demo1").innerHTML =
+        "<h1>" + a + " " + typeof a + "</h1>"; //Hello, we,are, cybrom object
+        console.log(str1)
+        console.log(a)
+    </script>
+  </body>
+</html>

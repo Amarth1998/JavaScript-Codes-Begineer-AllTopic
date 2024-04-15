@@ -1,0 +1,46 @@
+#JS Window location 
+The window.location object can be used to get the current page address(url) and to redirect the browser to a new page.
+
+Window location
+The window.location object can be written without the window prefix.
+
+Some examples:
+
+*window.location.href returns the href(url) of the current page.
+*window.location.hostname returns the domain name of the web host
+window.location.pathname returns the path amd filename of the current page.
+window.location.protocal returns the web protocal used (http : or https:)
+window.location.assign() loads a new document
+
+# Javascript modules
+ modules
+ Javascript modules allow you to break your code into separate files.
+ this makes it easier to maintain the code-base
+ js modules rely on the import and export statements.
+
+ There are two types of exports :
+ *default exports
+ *named exports
+
+#named exports :-
+with named export we can use export keyword with {}.
+using named export we can export multiple items
+
+
+
+
+# Import :--
+
+There are two types of imports :
+1. Named import
+2. Default import
+
+1. with named import we can use destructive{} method with items
+
+like :
+import{rollno, name} from "/.filename.js";
+
+2. with default import we dont use {} destructive method we direct import the item with or without name because only one item will be export.
+
+like:
+import item from "/.filename.js";

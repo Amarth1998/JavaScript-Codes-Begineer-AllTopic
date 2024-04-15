@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+city:
+     <input type="text"  id="a">
+     <button onclick="mycity()">click>>>>>>>>>></button>
+
+    &nbsp;
+    <button onclick="mycity2()">click<<<<<<<<<<</button>
+     <input type="text"  id="b">
+   
+
+<script>
+    function mycity(){
+        a=document.getElementById("a").value;
+        
+        document.getElementById("b").value=a;
+        document.getElementById("a").value="";
+       
+    }
+
+    function mycity2(){
+        b=document.getElementById("b").value;
+        document.getElementById("a").value=b;
+        document.getElementById("b").value="";
+    }
+</script>
+
+</body>
+</html>

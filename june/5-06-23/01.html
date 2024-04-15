@@ -1,0 +1,22 @@
+<!-- extracting string parts
+there are 3 methods for extracting a part of a string:
+
+slice(start,end)
+substring(start,end)
+substr(start,length) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>JavaScrip  String Methods</h2>
+    <p id="demo"></p>
+    <script>
+        var str = "Hello we  student";
+        //document.getElementById("demo").innerHTML = str.slice(5);  //we are student
+        //document.getElementById("demo").innerHTML = "<h1>"+str.slice(0,5)+"</h1>";  //Hello
+       // document.getElementById("demo").innerHTML = "<h1>"+str.substring(0,5)+"</h1>";  //Hello
+        document.getElementById("demo").innerHTML = "<h1>"+str.substr(5,8)+"</h1>";  //we are
+        </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getvalue() {
+        var x = document.f1.name.value;
+        var y =  document.f1.city.value;
+        alert("my name is :" + x + "city :" + y);
+      }
+    </script>
+  </head>
+  <body>
+    <form name="f1" method="post" action="save.html" onsubmit="getvalue();">
+      name <input type="text" name="name" /><br />
+      city <input type="text" name="city" />
+      <input type="submit" value="save" />
+    </form>
+  </body>
+</html>

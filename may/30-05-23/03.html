@@ -1,0 +1,21 @@
+<!-- shift()
+remove the first arry element and shifts all other element to a lower index -->
+<!DOCTYPE html>
+<head>
+<body>
+
+<h1 id="demo4">welcome</h1>
+<h1 id="demo5">welcome</h1>
+<button onclick="display2()"> click </button>
+
+<script>
+ function display2() {
+            const name=["raj","mohna","pankay","ramu"]
+            var a=name.shift("raj")
+            document.getElementById("demo4").innerHTML=name;  //mohna,pankay,ramu
+            document.getElementById("demo5").innerHTML=a;  //raj
+        }
+</script>
+    
+</body>
+</html>

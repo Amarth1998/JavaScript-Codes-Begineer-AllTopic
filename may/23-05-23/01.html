@@ -1,0 +1,107 @@
+javascript variable
+4 way to declare a js variable
+using var ,let , const,nothing
+
+                                 what is variable ?  
+variable are container for storing data 
+
+
+                                when to use js variable
+always declare js variable with var,let,const
+the var keyword is used in all js code from 1995-2015
+the let and const keyword were added to js in 2015
+if you want your code to run in older browser ,you must use var 
+
+                                       js let
+the let keyword was introduced in ES6 2015
+variable defined with let cannot be redeclared
+variable defined with let  must be declared before use
+variable defined with let  chave a block scope
+                                       js const
+the const keyword was introduced in ES6 2015
+variable defined with const cannot be redeclared
+variable defined with const  cannot be ressigned
+variable defined with const have a block scope          
+
+Ecma International (formally European Computer Manufacturers Association) 
+es6
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+     <script>
+        var a=10       //dec
+        console.log(a)
+
+         var a=50     //redec
+         console.log(a)
+       let  b=10       //dec
+       console.log(b) 
+
+
+    </script>
+     
+
+    <script>
+      var a = 10;
+      console.log(a);
+      {
+        var a = 50;
+        console.log(a);
+      }
+      console.log(a);
+
+      let b = 10;
+      console.log(b);
+      {
+        let b = 50;
+        console.log(b);
+      }
+      console.log(b);
+    </script> 
+
+
+<script>
+    var a = 10;
+    console.log(a);
+    {
+      console.log(a);
+    }
+    console.log(a);
+
+    let b = 10;
+    console.log(b);
+    {
+      console.log(b);
+    }
+    console.log(b);
+
+    let a ;
+    
+  </script> 
+
+  <script>
+    let a;
+    console.log(a) //undefined
+
+    let b = null;
+    console.log(b) //null
+
+    let c = null;
+    console.log(c) //null
+  </script>
+
+  <script>
+    const pi=3.14
+    console.log(pi) //3.14
+  </script>
+  
+  </body>
+</html>

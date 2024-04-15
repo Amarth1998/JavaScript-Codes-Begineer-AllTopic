@@ -1,0 +1,50 @@
+<!-- switch statement -->
+ <!-- switch(){
+    case level1:
+    //statement
+    break;
+    case level2:
+    //statement
+    break;
+    default:
+    //statement
+    }  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    enter number 1 <input type="text" id="n1" /><br />
+    enter number 2 <input type="text" id="n2" /><br />
+    enter choice <input type="text" id="ch" />(-,+,*,/) <br />
+    <button onclick="myFunction()">click me</button>
+    <h1 id="ans"></h1>
+    <script>
+      function myFunction() {
+        var n1 = parseInt(document.getElementById("n1").value);
+        var n2 = parseInt(document.getElementById("n2").value);
+        var ch = document.getElementById("ch").value;
+
+        switch (ch) {
+          case "+":
+            document.getElementById("ans").innerHTML = n1 + n2;
+            break;
+          case "-":
+            document.getElementById("ans").innerHTML = n1 - n2;
+            break;
+          case "*":
+            document.getElementById("ans").innerHTML = n1 * n2;
+            break;
+          case "/":
+            document.getElementById("ans").innerHTML = n1 / n2;
+            break;
+          default:
+            document.getElementById("ans").innerHTML = "invalid";
+            break;
+        }
+      }
+    </script>
+  </body> 
+</html>

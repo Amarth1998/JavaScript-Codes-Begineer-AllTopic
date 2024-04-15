@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body bgcolor="yellow">
+
+	<a href="local-storage-1.html">Home</a>|
+	<a href="about.html">About</a>|
+	<a href="service.html">Service</a>|
+	<a href="join.html">Join</a>|
+	<a href="contact.html">Contact</a>|
+    <hr size="5" color="red">
+    <h1 id="demo"></h1>
+    <h1>Welcome to join page</h1>
+</body>
+<script>
+    var username=localStorage.getItem("uname");
+    document.getElementById("demo").innerHTML="welcome "+username+" <a href='logout.html'> Logout</a> ";
+</script>
+</html>

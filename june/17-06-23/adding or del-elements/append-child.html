@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            padding: 60px;
+            border: 4px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click Here !</button> 
+    <div id="box"> </div>
+    <script >
+document.getElementById('btn').addEventListener("click",display)
+function display(){
+    let mypara=document.createElement("p");
+    mypara.innerHTML="Enter city : <input type='text'>";
+    mypara.style.width="300px";
+    document.getElementById("box").appendChild(mypara);
+}
+
+    </script>
+</body>
+</html>

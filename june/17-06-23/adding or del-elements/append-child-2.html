@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <button id="btn">Click Here !</button>
+    <h1>My subject</h1>
+    <ol id="mylist">
+        <li>Python</li>
+        <li>PHP</li>
+        <li>JAVASCRIPT</li>
+    </ol>
+    <script>
+    document.getElementById('btn').addEventListener("click",display);
+        function display(){
+            let myli=document.createElement("li");
+            myli.innerHTML="JAVA";
+            document.getElementById("mylist").insertBefore(myli,mylist.children[1]);
+        }
+        </script>
+</body>
+</html>

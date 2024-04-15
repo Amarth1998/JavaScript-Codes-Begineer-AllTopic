@@ -1,0 +1,2 @@
+command for display json :--
+        json-server --watch db.json

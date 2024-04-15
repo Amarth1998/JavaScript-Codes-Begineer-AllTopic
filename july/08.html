@@ -1,0 +1,35 @@
+<!-- hover() -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jqueary.js"></script>
+
+<style>
+#smalling{width: 25%; height: 200px;}
+#demo{ display: none;  }
+</style>
+
+    <script>
+$(document).ready(function(){
+  
+    $("#smalling").hover(function(){ $("#demo").show(1000)})
+
+    // $("#smalling").hover(function(){ $("#demo").hide(1000)})
+})
+
+
+
+
+    </script>
+</head>
+<body>
+    <center>
+        <img src="pexels-photo-2043590.jpeg" id="smalling" alt=""> <br> <br> <br>
+       <h1 id="demo">welcome to cybrom</h1>
+        
+        </center>
+</body>
+</html>

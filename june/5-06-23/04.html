@@ -1,0 +1,27 @@
+exacting string character 
+there are 3 method
+1.charAT(POSITION)
+2.charCodeAt(position) return ascii scharacter
+3.Property access[] : 
+property might be a little unpredicatable
+1.it makes string look like array (but they are not)
+2.if no character is found ,[] return undefined ,while charAt() return an empty String
+3.it is read only. str[]="A" gives no error (but does not work)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>JavaScrip  String Methods</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <script>       
+var str1 = "Hello we are mits student  MITS ";
+document.getElementById("demo").innerHTML = "<h1>"+str1.charAt(0)+"</h1>";  //h
+document.getElementById("demo1").innerHTML = "<h1>"+str1.charCodeAt(0)+"</h1>";//72 
+document.getElementById("demo2").innerHTML = "<h1>"+str1[0]+"</h1>"; //H
+        </script>
+</body>
+</html>

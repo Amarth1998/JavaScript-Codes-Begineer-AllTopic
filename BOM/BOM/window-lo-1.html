@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body bgcolor="yellow">
+
+	<a href="history_object.html">Home</a>|
+	<a href="about1.html">About</a>|
+	<a href="service.html">Service</a>|
+	<a href="join.html">Join</a>|
+	<a href="contact.html">Contact</a>|
+   
+    <script>
+        var add=window.location.href;
+        document.write("<h1>",add);
+        
+        var host=window.location.hostname;
+        document.write("<h1>",host);
+
+        var path=window.location.pathname;
+        document.write("<h1>",path);
+
+        var protocol=window.location.protocol;
+        document.write("<h1>",protocol);
+
+        function newload(){
+            window.location.assign("history-obj-1.html");
+        }
+    </script>
+    <button onclick="newload();">Click here</button>
+</body>
+</html>

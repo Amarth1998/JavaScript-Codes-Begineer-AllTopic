@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="stop()"> stop... </button>
+    
+<p id="a"></p>
+    <script>
+        function display(){
+        document.getElementById("a").innerHTML+="amarth" +" "
+        }
+        
+
+        var x=setInterval(display,1000)
+
+        function stop(){
+            clearInterval(x)
+        }
+
+    </script>
+</body>
+</html>

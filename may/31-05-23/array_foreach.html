@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function Display()
+		{  const name=["raj","nitin","aval","pamkaj","seema","sunita"];
+			
+		      var txt="<ol>";
+             
+			name.forEach(Mylist);
+
+			function Mylist(val)
+			{
+				txt =txt + "<li>"+val+"</li>";
+			}
+
+			txt= txt + "</ol>";
+			
+			document.getElementById('demo').innerHTML=name;
+			document.getElementById('demo1').innerHTML=txt;
+		}
+	</script>
+</head>
+<body>
+
+	<h1 id="demo">Welcome!!!</h1>
+	<h1 id="demo1">Welcome!!!</h1>
+	<button onclick="Display();">click here!!</button>
+
+
+</body>
+</html>

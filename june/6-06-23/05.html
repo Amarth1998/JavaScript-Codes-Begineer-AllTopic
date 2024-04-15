@@ -1,0 +1,22 @@
+<!-- string includes():
+this method returns true if a string contain a specified value -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      var str1 = "Hello we are cybrom ANA AMARTH cybrom ";
+      document.getElementById("demo").innerHTML = "<h1>" + str1 + " " + typeof str1 + "</h1>"; //Hello we are cybrom string
+      var a = str1.includes("cybrom");
+      var b=str1.includes("lucky")
+      document.getElementById("demo1").innerHTML = "<h1>" + a + " " + typeof a + "</h1>"; //true  boolean
+      document.getElementById("demo2").innerHTML = "<h1>" + b + " " + typeof b + "</h1>"; //false  boolean
+        console.log(str1)
+        console.log(a)
+    </script>
+  </body>
+</html>

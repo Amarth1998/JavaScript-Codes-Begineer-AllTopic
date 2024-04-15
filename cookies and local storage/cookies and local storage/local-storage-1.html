@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function userset(){
+            var myval=document.getElementById('usr').value;
+            localStorage.setItem("uname", myval);
+            var username=localStorage.getItem("uname");
+            document.getElementById("demo").innerHTML="welcome "+username+" <a href='logout.html'> Logout</a> ";
+        }
+    </script>
+</head>
+<body >
+
+	<a href="local-storage-1.html">Home</a>|
+    <h1 id="demo"></h1>
+
+	<h1>Welcome to my Home page</h1>
+    Enter Id : <input type="text" id="usr">
+    <button onclick="userset();">click</button>
+</body>
+</html>

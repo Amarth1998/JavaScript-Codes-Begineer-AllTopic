@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function validation() {
+        var x = document.f1.roll_number.value;
+        var y = document.f1.name.value;
+        var z = document.f1.password.value;
+        var z1 = document.f1.class.value;
+        if (x == "") {
+          alert("enter roll number");
+          document.f1.roll_number.focus();
+          return false;}
+
+        if (y == "") {
+          alert("enter name");
+          document.f1.name.focus();
+          return false; }
+
+          if (z == "") {
+          alert("enter  password");
+          document.f1.password.focus();
+          return false;}
+
+        if (z1 == "") {
+          alert("enter class");
+          document.f1.class.focus();
+          return false; }
+      }
+      
+
+
+    </script>
+  </head>
+  <body>
+    <center> 
+    <h1> application  form </h1>
+    <form name="f1" method="post" action="save.html" onsubmit=" return validation();">
+      roll number <input type="text" name="roll_number" required /><br />
+      name <input type="text" name="name" /><br>
+      password <input type="password" name="password"><br>
+      class <input type="text" name="class">
+
+      <input type="submit" value="save" />
+    </form>
+
+</center>
+  </body>
+</html> 

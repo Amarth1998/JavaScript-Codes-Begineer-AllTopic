@@ -1,0 +1,49 @@
+<!-- reduce()
+method reduce an array of value down to just one value.
+to get the output value it run a reducer function on each element of an array
+
+syntax
+arr.reduce(callback,initial value)
+the callback argument is a function that will be called once for every item in the array.
+this function takes four argument ,but often only first two are used.
+-->
+
+<html lang="en">
+<head>
+</head>
+<body>
+<button onclick="display()">cilck me</button>
+<h1 id="demo">Welcome</h1>
+<h1 id="demo1">welcome.</h1>
+<script>
+    function display() {
+        const sal=[1000,1000,1000,1000,1000]
+        const  mysal=sal.reduce(function(val,int){return val+int },0)
+
+        document.getElementById("demo").innerHTML=sal
+        document.getElementById("demo1").innerHTML=mysal
+    }
+</script>
+</body>
+</html>
+ 
+
+<!-- 
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>with arrow function</h1>
+<button onclick="display()">cilck me</button>
+<h1 id="demo">Welcome</h1>
+<h1 id="demo1">welcome.</h1>
+<script>
+    function display() {
+        const sal=[1000,1000,1000,1000,1000]
+        const  mysal=sal.reduce((val,int)=>{val+int},0)
+        document.getElementById("demo").innerHTML=sal
+        document.getElementById("demo1").innerHTML=mysal
+    }
+</script>
+</body>
+</html> -->

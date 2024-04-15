@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>my website</title>
+</head>
+<body>
+  <script type="text/javascript">
+    let date=new Date();
+    let mytime=date.getTime();
+    const week=["sun","mon","tue","wef","thurs","fri","satu"]
+
+ document.write("<h1>",mytime,"</h1>"); //1687335483598
+ document.write("<h1>",week,"</h1>"); //sun,mon,tue,wef,thurs,fri,satu
+    document.write("<h1>",date,"</h1>");//Wed Jun 21 2023 13:48:39 GMT+0530 (India Standard Time)
+   
+    let myday=date.getDay();
+    document.write("<h1>",myday,"</h1>");//3
+  </script>
+</body>
+</html>

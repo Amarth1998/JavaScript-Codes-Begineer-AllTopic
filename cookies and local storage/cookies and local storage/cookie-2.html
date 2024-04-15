@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        function setcookie(){
+            document.cookie="name=sunil";
+            alert("cookie created");
+        }
+        function getcookie(){
+            if (document.cookie!=""){
+                var myval=document.cookie.split("=");
+                console.log(myval);
+                alert("my name is : "+myval[1]);
+            }
+            else{
+                alert("cookie does not set");
+            }
+        }
+    </script>
+    <button onclick="setcookie();">Create my cookie</button>
+    <button onclick="getcookie();">see cookie value</button>
+</body>
+</html>

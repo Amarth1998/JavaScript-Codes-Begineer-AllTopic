@@ -1,0 +1,96 @@
+<!-- 
+jquery
+
+jquery is a lightweight, "write less ,do more",javascript library
+
+the purpose of jquery is to make it much easier to use javascript on your website
+
+jquery takes a lot of common tasks that require many lines of javascript code of accomplise,and 
+wraps them into methods that taks you can with a single lines of code 
+
+jquery also simplifies a lot of the complicated things from javascript ,like AJAX calls and DOM manipulation .
+ 
+
+The jQuery library contains the following features:
+
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities
+
+
+
+
+Why jQuery?
+There are lots of other JavaScript libraries out there, but jQuery is probably the most popular, and also the most extendable.
+
+Many of the biggest companies on the Web use jQuery, such as:
+Google
+Microsoft
+IBM
+Netflix
+
+
+
+
+Adding jQuery to Your Web Pages
+There are several ways to start using jQuery on your web site. You can:
+
+Download the jQuery library from jQuery.com
+Include jQuery from a CDN, like Google
+
+
+
+
+jQuery Syntax
+The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+Basic syntax is: $(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+
+
+Examples:
+$(this).hide() - hides the current element.
+
+$("p").hide() - hides all <p> elements.
+
+$(".test").hide() - hides all elements with class="test".
+
+$("#test").hide() - hides the element with id="test".
+
+
+
+
+
+
+The Document Ready Event
+You might have noticed that all jQuery methods in our examples, are inside a document ready event:
+
+$(document).ready(function(){
+
+  // jQuery methods go here...
+
+});
+This is to prevent any jQuery code from running before the document is finished loading (is ready).
+
+It is good practice to wait for the document to be fully loaded and ready before working with it. This also allows you to have your JavaScript code before the body of your document, in the head section.
+-->
+
+<!DOCTYPE html>
+ <html><head>
+<script src="jqueary.js">  </script>
+<script>
+$(document).ready(function (){ 
+    $("button").click(function(){
+        $("h1").hide(300)
+    })
+})
+</script></head>
+<body>
+<h1>Welcome to my college</h1>
+<button>click here</button>
+</body> </html>

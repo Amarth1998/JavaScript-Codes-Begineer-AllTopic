@@ -1,0 +1,41 @@
+ document object model
+ when a web page is loaded the browser create a document object model of page .
+
+ the html dom model is constructed as a tree of object
+
+ with the object model js gets all the power it need to create dynamic HTML .
+
+
+changing html element
+property                                   description
+element.innerHTML = NEW Html content       chnge the inner html of an element
+element.attribute = new value               chnge the attribute value  html of an element
+element.style.property=new style            chnge the style of an html of an element
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+    #box{
+        width: 300px;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: aquamarine;
+        border: 2px solid black;
+        font-size: 40px;}
+</style>
+
+<body>
+<div id="box" onmouseover="mydata()"  onmouseout="mydata2()">
+mits
+</div>    
+
+<script>
+    function mydata(){ document.getElementById("box").innerHTML="bansal"}
+    function mydata2(){ document.getElementById("box").innerHTML="hello"}
+</script>
+</body>
+</html>
+

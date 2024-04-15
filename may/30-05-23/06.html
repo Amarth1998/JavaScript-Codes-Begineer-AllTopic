@@ -1,0 +1,22 @@
+<!-- concat()
+create a new array by merging existing array
+ -->
+
+<!DOCTYPE html>
+<head>
+<body>
+<h1 id="demo4">welcome</h1>
+<h1 id="demo5">welcome</h1>
+<button onclick="display2()"> click </button>
+<script>
+ function display2() {
+            const name=["raj","mohna","pankay","ramu"]
+            const name2=["seema","zoya"]
+            const name1=["dddddddeema","zoya"]
+            const name3=name.concat(name2,name1,"my name is amarth")
+            document.getElementById("demo4").innerHTML=name3; //raj,mohna,pankay,ramu,seema,zoya,dddddddeema,zoya,my name is amarth    
+        }
+</script>   
+</body>
+</html>
+

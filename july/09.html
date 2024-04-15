@@ -1,0 +1,40 @@
+<!-- focus() , blur() -->
+
+<!-- hover() -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jqueary.js"></script> 
+
+<style>
+
+</style>
+
+    <script>
+$(document).ready(function(){
+  $("input").focus( function (){ 
+    $(this).css("background-color","pink")
+  })
+
+  $("input").blur( function (){ 
+    $(this).css("background-color","white")
+  })
+
+ 
+
+})
+
+
+
+
+    </script>
+</head>
+<body>
+    <center>
+      enter name <input type="text"> <br> <br>
+      enter city <input type="text"> <br><br>
+      enter class <input type="text"> <br>
+        
+        </center>
+</body>
+</html>

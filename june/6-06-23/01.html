@@ -1,0 +1,27 @@
+<!-- js string split()
+a string can be converted to an array with the split() method
+
+example.
+text.split(",") //split on commas
+text.split(" ") //split on spaces
+text.split("|") //split on pipe
+if the seprator is omitted,the returned array will contain the whole string in index[0]
+if the separator is "", the returned array will be an array of string characters
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+      <p id="demo"></p>
+    <p id="demo1"></p>
+  <script>       
+var str1 = "Hello, we ,are, MITS";
+document.getElementById("demo").innerHTML = "<h1>"+str1+" "+ typeof(str1) +"</h1>";  //Hello, we ,are, MITS string
+var a=str1.split(",")
+document.getElementById("demo1").innerHTML = "<h1>"+a+" "+ typeof(a)  +"</h1>";  //Hello, we,are, MITS object
+console.log(a)
+        </script>
+</body>
+</html>

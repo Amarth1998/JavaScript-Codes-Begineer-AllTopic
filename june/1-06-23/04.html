@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body> 
+    <h1>map function  </h1>
+    <button onclick="display();" >click me</button>
+    <p id="demo">welcome</p>
+    <script>
+        // object of arrAY
+      function display() {
+        const name =[
+        {"roll_no":120, "name":"amarth" ,"city":"bhopal" ,"fees":1000},
+        {"roll_no":100, "name":"ramu" ,"city":"dilhi" ,"fees":1000},
+        {"roll_no":999, "name":"salman" ,"city":"mumbai" ,"fees":00},
+        {"roll_no":7894, "name":"HELLO" ,"city":"ASSAM" ,"fees":990}
+      ]
+       
+var table="<table border='1' >";
+    name.map((key)=>{
+            table+="<tr>";
+            table+="<td>"+key.roll_no+"</td>";
+            table+="<td>"+key.name+"</td>";
+            table+="<td>"+key.city+"</td>";
+            table+="<td>"+key.fees+"</td>";
+            table+="</tr>";
+    }   )
+    table+="</table>";
+    
+    document.getElementById("demo").innerHTML=table;
+
+      }
+    </script>
+  </body>
+</html>

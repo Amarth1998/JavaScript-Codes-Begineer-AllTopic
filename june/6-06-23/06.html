@@ -1,0 +1,29 @@
+<!-- js template literals:
+synonyms
+template literals
+template string
+string template
+back-tics syntax
+template literals use back-tics(``) rather than the quotes ("") to define a string:
+ex.le text=`hello wolrd!`; 
+
+quotes inside string:
+with the template literal you can used singlt or doublr quotes inside a string
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+var str1 = `hello world`;
+document.getElementById("demo").innerHTML = "<h1>" + str1 + " , " + typeof str1 + "</h1>"; //hello world , string
+var s=`"hello world" 'hey'`
+document.getElementById("demo1").innerHTML = "<h1>" + s  + "</h1>"; // "hello world" 'hey'
+    </script>
+  </body>
+</html>

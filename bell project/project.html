@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>my water Tank</title>
+ 	<style type="text/css">
+
+ 		#tank
+ 		{
+ 			background-image: url("tank.jpg");
+ 			width: 330px;
+ 			height: 430px;
+ 			position: relative;
+ 			padding-left: 9px;
+ 			margin-left: 210px;
+ 		}
+
+ 		#water
+ 		{
+ 			width: 320px;
+ 			height: 10px;
+ 			background-color: lightblue;
+ 			position: absolute;
+ 			top:400px;
+ 			margin-left: 7px;
+ 		}
+
+
+
+ 	</style>
+ 	<script type="text/javascript">
+ 		var mytm;
+ 		var tp=400;
+ 		var ht=10;
+
+ 		function myTank()
+ 		{
+ 			let Obj=document.getElementById('water');
+ 			tp=tp-1;
+ 			ht=ht+1;
+
+ 			Obj.style.top=tp+"px";
+ 			Obj.style.height=ht+"px";
+
+ 			if(tp==60)
+ 			{
+ 				clearInterval(mytm);
+ 				let bellObj=document.getElementById("bell");
+ 				bellObj.innerHTML=` <img src="bell.jpg" width="100px" height="100px">
+ 									<audio controls autoplay>
+ 									<source src="bell.wav" type="audio/ogg">
+ 									</audio>
+ 									`;
+ 			}
+ 		}
+
+ 		function fillTank()
+ 		{
+ 			mytm=setInterval(myTank,100);
+ 		}
+
+ 		function mtrStop()
+ 		{
+ 			clearInterval(mytm);
+ 		}
+
+ 	</script>
+
+ </head>
+ <body>
+ 	<button onclick="fillTank();"> Fill your tank</button>
+ 	<button onclick="mtrStop();">Motor stop</button>
+ 	<div id="tank">
+ 		<div id="water"></div>
+ 	</div>
+ 	<p id="bell"></p>
+ </body>
+</html>

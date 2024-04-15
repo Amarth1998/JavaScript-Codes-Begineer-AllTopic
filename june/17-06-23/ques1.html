@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            padding: 70px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function display(){
+            document.getElementById("box").style.backgroundColor="yellow";
+        }
+        function display1(){
+            document.getElementById("box").style.backgroundColor="yellow";
+            document.getElementById("box").style.borderRadius="200px";
+        }
+        function display2(){
+            document.getElementById("box").style.backgroundColor="yellow";
+            document.getElementById("box").style.borderRadius="200px";
+            document.getElementById("box").style.color="blue";
+            document.getElementById("box").style.lineHeight="170px";
+            document.getElementById("box").style.fontWeight="1800";
+            document.getElementById("box").innerHTML="WELCOME TO CYBROM";
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, totam voluptate eaque eius nisi nihil corporis sapiente dolorem quas necessitatibus similique tempora vel, sit porro quam error odit pariatur perspiciatis?m
+    </div>
+    <button onclick="display();">click here</button>
+    <button onclick="display1();">click here</button>
+    <button onclick="display2();">click here</button>
+</body>
+</html>

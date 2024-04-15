@@ -1,0 +1,39 @@
+<!-- mouseout c -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jqueary.js"></script>
+
+<style>
+#smalling{width: 30px; height: 30px; }
+#biging{width: 30px; height: 30px; display: none;}
+</style>
+
+    <script>
+$(document).ready(function(){
+  $("#smalling").mouseenter(function(){
+    $("#biging").show(3000)
+  })
+
+  $("#biging").mouseleave(function(){
+    $("#smalling").hide(3000)
+  })
+
+})
+
+
+
+
+    </script>
+</head>
+<body>
+    <center>
+        <img src="pexels-photo-2043590.jpeg" id="smalling" alt=""> <br> <br> <br>
+        <img src="pexels-photo-2043590.jpeg" id="biging" alt="">
+        
+        </center>
+</body>
+</html>

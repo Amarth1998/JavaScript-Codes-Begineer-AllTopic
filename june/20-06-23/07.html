@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<button onclick="mystop()"> stop </button>
+<script>
+var myvar;
+
+    function display(){
+document.write("<h1> cybrom </h1>")
+    }
+  myvar=  setTimeout(display,5000)
+
+  function mystop(){
+    clearTimeout(myvar)
+  }
+</script>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!-- fetch API 
+
+javascript fetch api
+
+fetch() method
+
+the fetch API interface allows web browser to make http request to web server. 
+If you the XMLHttpRequest object , fetch can do the same in a simpler way.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<h1 id="demo"></h1>
+<script>
+    let myfile="amarth.txt"
+    fetch(myfile).then(x=>x.text() ).then(y=>document.getElementById('demo').innerHTML=y )
+</script>
+</body>
+</html>
+

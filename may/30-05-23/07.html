@@ -1,0 +1,25 @@
+<!-- splicing and slicing array
+
+the splice() method adds new item to an array
+the slice() method  slices out a piece of an array  
+
+-->
+
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <body>
+        <h1 id="demo4">welcome</h1>
+        <h1 id="demo5">welcome</h1>
+        <button onclick="display2()"> click </button>
+        <script>
+         function display2() {
+                    const name=["raj","mohna","pankay","ramu"]
+                    document.getElementById("demo4").innerHTML=name; 
+                    name.splice(2,0,"hello","heyaa")
+                    document.getElementById("demo5").innerHTML=name; //raj,mohna,hello,heyaa,pankay,ramu
+                }
+        </script>  
+</body>
+</html>

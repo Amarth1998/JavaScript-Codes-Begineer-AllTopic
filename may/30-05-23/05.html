@@ -1,0 +1,23 @@
+<!-- js array delete is a command
+warning
+array elemet can be delete using the js operator delete
+using delete leave undefined holes in array
+use pop or shift() instead -->
+
+<!DOCTYPE html>
+<head>
+<body>
+<h1 id="demo4">welcome</h1>
+<h1 id="demo5">welcome</h1>
+<button onclick="display2()"> click </button>
+<script>
+ function display2() {
+            const name=["raj","mohna","pankay","ramu"]
+            
+            document.getElementById("demo4").innerHTML=name; //raj,mohna,pankay,ramu
+            delete name["0"];
+            document.getElementById("demo5").innerHTML=name;  //,mohna,pankay,ramu
+        }
+</script>   
+</body>
+</html>

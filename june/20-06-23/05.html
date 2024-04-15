@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+    <h1 id="cnt">0</h1>
+    <button onclick="start()">Start.</button>
+    <button onclick="stop()">Stop.</button>
+</center>
+
+ <script>
+var mycnt=0;
+var mystp;
+function mystartnow(){
+    var data=parseInt(document.getElementById("cnt").innerHTML)
+    mycnt=data+1;
+    document.getElementById("cnt").innerHTML=mycnt; }
+
+function start(){
+ mystp=setInterval(mystartnow,1000)}
+
+function stop(){
+    clearInterval(mystp);
+}
+
+ </script>   
+    
+</body>
+</html>

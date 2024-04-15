@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>with arrow function</h1>
+<button onclick="display()">cilck me</button>
+<h1 id="demo">Welcome</h1>
+<h1 id="demo1">welcome.</h1>
+<script>
+    function display() {
+        const num=[34,1,5,4,6,79,4,8,4,7,5,7,1,7,121,84,84,84]
+        const  mynum=num.filter(val=>val%2==0)
+        document.getElementById("demo").innerHTML=num
+        document.getElementById("demo1").innerHTML=mynum
+    }
+</script>
+</body>
+</html>

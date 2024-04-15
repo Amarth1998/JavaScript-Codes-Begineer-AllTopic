@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body bgcolor="red">
+enter number1 <input type="text" id="no1"><br><br>
+enter number2 <input type="text" id="no2"><br>  <br>
+<button id="btn" style="width: 100px; font-size: 15px; ">click</button> <br>
+
+&nbsp; <h1 id="ans" ></h1>
+<script >
+document.getElementById("btn").addEventListener("click",mycal)
+function mycal(){
+    let no1=parseInt( document.getElementById("no1").value);
+    let no2=parseInt(document.getElementById("no2").value);
+    let ans= no1 + no2
+document.getElementById("ans").innerHTML="ADDITION" +" "+ ans
+}
+    </script>
+</body>
+</html>

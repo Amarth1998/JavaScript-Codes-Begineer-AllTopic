@@ -1,0 +1,40 @@
+<!-- filter ()
+filter methods takes each element in an array and it applies a conditional statement against it.
+if this condition return true , the element gets pushed to output array.
+if condtion retuen false ,the element does not get pushed to output array.
+
+var new_array=arr.filter( function callback (element) {
+    //retuen true or false
+})
+ 
+This syntax for filter is similar to map,except the callback function should return true to keep th element or false otherwise . in the csllback only element is required.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<button onclick="display()">cilck me</button>
+<h1 id="demo">Welcome</h1>
+<h1 id="demo1">welcome.</h1>
+
+<script>
+    function display() {
+        const num=[34,1,5,4,6,79,4,8,4,7,5,7,1,7,121,84,84,84]
+        const  mynum=num.filter(function(val) 
+        {
+            if (val%2==0){
+                return true}
+            else{ 
+                return false}
+        }
+        )
+
+        document.getElementById("demo").innerHTML=num
+        document.getElementById("demo1").innerHTML=mynum
+    }
+</script>
+
+</body>
+</html>

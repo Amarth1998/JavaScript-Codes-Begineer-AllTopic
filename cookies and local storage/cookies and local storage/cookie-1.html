@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        function setcookie(){
+            document.cookie="name=sunil";
+        }
+        function getcookie(){
+            if (document.cookie!=""){
+                alert("my cookie value : "+document.cookie);
+            }
+            else{
+                alert("cookie does not set");
+            }
+        }
+    </script>
+    <button onclick="setcookie();">Create my cookie</button>
+    <button onclick="getcookie();">see cookie value</button>
+</body>
+</html>

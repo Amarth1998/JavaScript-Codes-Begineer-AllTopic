@@ -1,0 +1,46 @@
+{
+    "student": [
+        {
+            "rollno": 101,
+            "name": "sunil",
+            "address": "vidisha"
+        },
+        {
+            "rollno": 102,
+            "name": "akash",
+            "address": "bhopal"
+        },
+        {
+            "rollno": 103,
+            "name": "karan",
+            "address": "indore"
+        },
+        {
+            "rollno": 104,
+            "name": "deepak",
+            "address": "betul"
+        }
+    ],
+    "fees": [
+        {
+            "rollno": 101,
+            "stuclass": "12th",
+            "fees": 20000
+        },
+        {
+            "rollno": 102,
+            "stuclass": "b.tech",
+            "fees": 30000
+        },
+        {
+            "rollno": 103,
+            "stuclass": "mca",
+            "fees": 34000
+        },
+        {
+            "rollno": 104,
+            "stuclass": "bba",
+            "fees": 27000
+ }
+]
+}

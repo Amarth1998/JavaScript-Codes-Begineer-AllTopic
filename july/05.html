@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        #div1{ width: 30%;
+         background-color: red;
+        height: 40px;
+    }
+
+    #div2{ width: 30%;
+         background-color:green;
+        height: 40px;}
+    </style>
+<script src="jqueary.js"></script>
+<script>
+
+$(document).ready(function(){
+  $("#b1").click(function(){
+    $("#div1").hide()
+  })
+
+  
+  $("#b2").click(function(){
+    $("#div2").hide()
+  })
+
+})
+
+
+</script>
+</head>
+<body>
+    <div id="div1"></div> <br>
+    <div id="div2"></div> <br>
+
+    <button id="b1">click here to hide red</button>
+    <button id="b2"> click here to hide green</button>
+</body>
+</html>

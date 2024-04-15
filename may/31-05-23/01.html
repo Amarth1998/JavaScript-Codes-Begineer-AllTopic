@@ -1,0 +1,94 @@
+
+<script type="text/javascript">
+
+    function display()
+    // {
+    //     const name=["raj" , "mohan" , "pankaj" , "seema" , "jalaj" ,"nitin"];
+    //     document.getElementById('demo1').innerHTML=name;
+
+    //     const myname=name.slice(2);    // slice array method
+    //     document.getElementById('demo2').innerHTML=myname;
+    // }
+
+    // {
+    //     const name=["raj" , "mohan" , "pankaj" , "seema" , "jalaj","nitin"];
+    //     document.getElementById('demo1').innerHTML=name;
+
+    //     const myname=name.slice(2,5);    // slice array method
+    //     document.getElementById('demo2').innerHTML=myname;
+    // }
+
+    // {
+    //     const name=["raj" , "mohan" , "pankaj" , "seema" , "jalaj","nitin"];
+    //     document.getElementById('demo1').innerHTML=name;
+
+    //      name.sort();    // sort array method
+    //     document.getElementById('demo2').innerHTML=name;
+    // }
+
+    // {
+    //     const name=["raj" , "mohan" , "pankaj" , "seema" , "jalaj","nitin"];
+    //     document.getElementById('demo1').innerHTML=name;
+
+    //      name.sort();    // sort array method
+    //     document.getElementById('demo2').innerHTML=name;
+
+    //      name.reverse();    //  Revers array method
+    //     document.getElementById('demo3').innerHTML=name;
+    // }
+
+    // {
+    //     var tot=0;
+
+    //     const num=[2,3,4,5,6,7,8,9,10];
+
+    //     num.forEach(mycal);  //for each() method
+
+    //     function mycal(val)
+    //     {
+    //         tot=tot+val;
+
+    //     }
+    //     document.getElementById('demo1').innerHTML=num;
+    //     document.getElementById('demo2').innerHTML=tot;
+    // }
+
+
+    // {
+    //     const name=["nitin" , "harshit", "harsh" , "aval" , "hardck"];
+    //     var txt="<ol>"
+    //     name.forEach(mylist);    //array for each() method
+
+    //     function mylist(val)
+    //     {
+    //         txt+="<li>"+val+"</li>";
+
+    //     }
+    //     txt+="</ol>";
+    //     document.getElementById('demo1').innerHTML=name;
+    //     document.getElementById('demo2').innerHTML=txt;
+    // }
+
+    {
+        const name=["nitin","harsh" , "aval" , "harshit" ,"neeraj", "amarth"];
+    
+        document.getElementById('demo1').innerHTML=name;
+
+        const myname=name.map((val)=>"<li>"+ val +"</li>");  // map array map() method
+
+        document.getElementById('demo2').innerHTML=myname;
+
+    }
+
+
+</script>
+</head>
+<body>
+    <h1 id="demo1"> welcome!!!</h1>
+    <h1 id="demo2"> wlecome!!!</h1>
+    <h1 id="demo3"> wlecome!!!</h1>
+
+    <button onclick="display();">click here</button>
+    
+</body>
+</html>

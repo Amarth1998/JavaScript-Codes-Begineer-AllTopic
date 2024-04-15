@@ -1,0 +1,64 @@
+<!-- JQUERY ANIMATE
+      
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <script src="jqueary.js"></script>  
+ <script>
+$(document).ready(function(){
+ 
+ $("#b1").click(function(){ 
+$("#box").animate({left:'50px',
+ height:'450px' ,
+ width:'500px',
+ },4000)
+});
+
+
+function display(){ 
+let a=document.getElementById("demo");
+let b=document.getElementById("box");
+a.innerHTML="hello world";
+a.style.color="red"
+b.style.border="5px solid red"
+b.style.padding="5px";
+
+ }
+
+ setInterval(display,3000)
+
+})
+
+
+
+ </script> 
+   
+ <style>
+#box{width: 200px; height: 200px; 
+    background-image: url("pexels-photo-2043590.jpeg");
+    background-size:cover ;
+    background-position: center;
+    position: absolute;
+    border-radius: 50%;
+    line-height: 12.5;
+}
+
+
+ </style>
+</head>
+<body>
+ <button id="b1">MY MOVE</button> <br> <br>
+   
+<div id="box">
+    <h1 align="center" id="demo"></h1>
+
+</div>
+
+    
+</body>
+</html>

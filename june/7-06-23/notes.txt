@@ -1,0 +1,59 @@
+# Javascript date objects:
+
+#Example
+const d = new Date():
+
+
+# Creating date onjects.
+* Date objects are created with the new Date() constructor.
+
+there are 4 ways to create a new date object:
+* new Date()
+* new Date(milliseconds)
+* new Date(date string)
+* new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+# new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+new Date(year,month...) creates a new date object with a specified date and time.
+7 numbers specify year,month,day,hour,minute,second,and milliseconds(in that order.)
+
+note** Javascript counts months from 0 to 11.
+january=0
+december = 11
+
+specifying a month higher than 11, will not result in an error but add the overflow to the next year.
+
+# new Date(milliseconds)
+new Date(milliseconds) creates a new date object as zero time plus milliseconds.
+
+Example :
+const d = new Date(1565656565656);
+
+Example :
+const d = new Date(86400000);
+one day (24 hours) is 86 400 000 milliseconds.
+
+# new Date(date string) :
+Javascript date input:
+new Date(date string) creates a new date object with a date string.
+ there are generally 3 types of Javascript date input formats.
+
+ types                      Example
+
+ ISO date                   "2015-03-25"(the international standard)
+ Short Date                 "03/25/2015"
+ Long Date                  "March 25, 2015" or "25 mar 2015"
+
+ the iso format follows a atrict standard in js.
+ the other formats are not so well defined.
+
+
+ # Date Input- parsing dates
+ Javascript has a built-in function called Date.parse() that parses a date string and returns
+ the number of milliseconds since January 1, 1970.
+
+ Example :
+ const d = Date.parse("March 25, 2015");
+
+

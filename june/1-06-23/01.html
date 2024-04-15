@@ -1,0 +1,27 @@
+<!--         map function            -->
+
+map is a method work in array ,we pass parameter as function , return new array
+call bACK function
+variable.map( function function_name(){ } )
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1>map function</h1>
+    <button onclick="display()">click me</button>
+    <h3 id="demo"></h3>
+
+    <script>
+      function display() {
+        const name = ["raju", "mohan", "pankaj", "sandeep", "jalaj", "ranu"];
+        let data = "<ul type='circle'>";
+        name.map(function (val) {
+          data += "<li>" + val + "</li>";
+        });
+        data =data + "</ul>";
+        document.getElementById("demo").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>

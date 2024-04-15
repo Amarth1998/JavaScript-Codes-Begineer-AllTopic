@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1>map function  </h1>
+    <button onclick="display();" >click me</button>
+    <p id="demo">welcome</p>
+
+    <script>
+      function display() {
+        const name = ["raju", "mohan", "pankaj", "sandeep", "jalaj", "ranu"];
+        const myname  =name.map((keyy)=>"<h1>" + keyy +"</h1>" );
+        document.getElementById("demo").innerHTML = myname;
+      }
+    </script>
+  </body>
+</html>

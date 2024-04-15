@@ -1,0 +1,25 @@
+<script>
+    function validation() {
+      var x = document.f1.name.value;
+      var y = document.f1.city.value;
+      if (x == "") {
+        alert("enter name");
+        document.f1.name.focus();
+        return false; }
+
+      if (y == "") {
+        alert("enter city");
+        document.f1.city.focus();
+        return false; }
+    }
+  </script>
+</head>
+<body>
+  <center> 
+  <h1> application  form </h1>
+  <form name="f1" method="post" action="save.html" onsubmit=" return validation();">
+    name <input type="text" name="name" /><br />
+    city <input type="text" name="city" />
+    <input type="submit" value="save" />
+  </form>
+

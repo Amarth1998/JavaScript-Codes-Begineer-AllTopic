@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="jqueary.js"></script>
+   <script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        let divv=$("div")
+        divv.animate({height:'300px',opacity:'0.4'},1000)
+        divv.animate({width:'300px',opacity:'0.9'},1000)
+        divv.animate({height:'100px',opacity:'0.4'},1000)
+        divv.animate({width:'100px',opacity:'0.9'},1000)
+
+    })
+})
+</script>
+</head>
+<body>
+<button>start animation</button>
+    <div style="background-color:rgb(247, 131, 7);height: 400px; width: 300px; position: absolute;"></div>
+    
+</body>
+</html>

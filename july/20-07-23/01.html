@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <button onclick="Display();">Click to display student record</button><br><br>
+    <button onclick="Display();">Click to display student-fees record</button>
+    <br><br>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+<script>
+    function Display(){
+        async function MyData(){
+            let url="http://localhost:3000/student";
+            let MyObj=await fetch(url);
+            let Data=await MyObj.json();
+            let Table=`<table border="1" bgcolor="yellow">
+                <tr>
+                    <td>Roll no </td>
+                    <td>name </td>
+                    <td>address</td>
+                </tr>
+                    `;
+            Data.map((key)=>{
+                Table +=`<tr>
+                    <td>${key.rollno}</td>
+                    <td>${key.name}</td>
+                    <td>${key.address}</td>
+                </tr>`;
+            });
+        Table+="</table>";
+        document.getElementById("demo").innerHTML=Table;
+        }
+
+        MyData()
+    }
+</script>
+</body>
+</html>

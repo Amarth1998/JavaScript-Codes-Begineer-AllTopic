@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <h1 id="demo1"> welcome!!!</h1>
+    <h1 id="demo2"> wlecome!!!</h1>
+    <h1 id="demo3"> wlecome!!!</h1>
+    <button onclick="display();">click here</button>
+
+    <script>
+        function display()
+    {
+        const name=["raj" , "mohan" , "pankaj" , "seema" , "jalaj" ,"nitin"];
+        document.getElementById('demo1').innerHTML=name;
+
+        const myname=name.slice(2);    // slice array method
+        document.getElementById('demo2').innerHTML=myname;
+    }
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!-- 
+filterr():
+syntax :
+iterable.filter(function(){})
+filter , is used to filter .
+when we pass function as argument to another function and return value if true called callback. 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+      const n=[22,51,55,62,40,80,51]
+      const even= n.filter(function (val){ if (val%2==0){return true}})
+      console.log(n)
+      console.log(even)
+   </script>
+</body>
+</html>

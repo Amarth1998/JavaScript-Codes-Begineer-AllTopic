@@ -1,0 +1,43 @@
+<!-- array method
+1.coverting array into string
+  tostring() coverts an array to a string of(comma separated) array values. 
+2.join() method also joins all array element into a String.
+it behave just like toString() but the in addition you can specify separator.
+3.pop() method removes the last element from an array
+-->
+
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1 id="demo1"> welcome </h1>
+    <h1 id="demo2"> welcome </h1>
+    <h1 id="demo3">welcome</h1>
+    <button onclick="display()"> click </button>
+    <script>
+        function display() {
+            const name=["raj","mohna","pankay","ramu"]
+            document.getElementById("demo1").innerHTML=name +" "+ typeof(name);//raj,mohna,pankay,ramu object
+            const myname=name.toString();
+            document.getElementById("demo2").innerHTML=myname +" "+ typeof(myname);//raj,mohna,pankay,ramu string
+            const mynamee=name.join("**");
+            document.getElementById("demo3").innerHTML=mynamee +" "+ typeof(mynamee); //raj**mohna**pankay**ramu string
+        }
+    </script>
+
+
+<h1 id="demo4">welcome</h1>
+<h1 id="demo5">welcome</h1>
+<button onclick="display2()"> click </button>
+
+<script>
+ function display2() {
+            const name=["raj","mohna","pankay","ramu"]
+            name.pop();
+            a=name.pop()
+            document.getElementById("demo4").innerHTML=name;  //raj,mohna,pankay
+            document.getElementById("demo5").innerHTML=a;  //pankay
+        }
+</script>
+</body>
+</html>

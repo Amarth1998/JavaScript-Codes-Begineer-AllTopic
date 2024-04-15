@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+        function mydisplay(){
+            let myFile="amarth.txt";
+
+            async function mydata(){
+                let fileobj= await fetch(myFile)
+                let data=await fileobj.text();
+                document.getElementById("demo").innerHTML=data;
+            } 
+
+            mydata()
+        }
+    </script>
+</head>
+<body bgcolor="red">
+    
+    <button  onclick="mydisplay()">click here to display data</button>
+    <h3 id="demo"></h3>
+</body>
+</html>

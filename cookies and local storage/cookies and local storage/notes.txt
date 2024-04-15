@@ -1,0 +1,53 @@
+cookies and local storage :--
+
+# jAvscript cookies :
+--
+A cookie is an amount of information that persists bwn a server-side and a client-side. a browser stores this information at the time of browsing.
+
+a cookie contains the info as a string generally in the form of a name-value pair seperated by semi-colons. it maintains the state of users info among all the web pages.
+
+# how to create a cookie in js :-
+in js we can create,read,update and delete a cookie by using document.cookie property.
+
+ The following syntax is used to create a cookie :
+
+ document.cookie="name=value";
+
+
+# Window Localstorage :--
+example
+set and retrieve a localstorage name/value pair:
+
+localStorage.setitem("lastname","thakur");
+localStorage.getitem("lastname");
+
+# definition and usage :
+the local storage object allows you to save key/value pairs in the browser.
+
+note
+the localStorage object stores data with no expiration date.
+
+the data is not deleted when the browser is closed and are available for future sessions 
+
+# syntax :
+
+window.localStorage
+
+or just
+localStorage
+
+#Save data to local storage :--
+
+localStorage.setitem(key,value);
+
+# read data from local storage
+
+let lastname = localStorage.getItem(key);
+
+# Remove data from localstorage :-
+
+localStorage.removeItem(key);
+
+# Remove all data from localstorage :-
+
+localStorage.clear();

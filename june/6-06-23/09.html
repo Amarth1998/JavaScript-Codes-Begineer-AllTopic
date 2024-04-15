@@ -1,0 +1,13 @@
+<!-- expression substitution
+template literals allow expression in sting -->
+
+<html lang="en">
+  <head> </head>
+  <body>
+    <script>
+let radius=12.45;
+var str=` area : ${(3.14*radius*radius).toFixed(2)} `;
+document.write("<h1>",str,"</h1>" ) //area : 486.71;
+    </script>
+  </body>
+</html>

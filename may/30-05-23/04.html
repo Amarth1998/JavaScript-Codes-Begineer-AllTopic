@@ -1,0 +1,21 @@
+<!-- unshift()
+add the first arry element and unshifts all other element at the beginning ( lower index) -->
+<!DOCTYPE html>
+<head>
+<body>
+
+<h1 id="demo4">welcome</h1>
+<h1 id="demo5">welcome</h1>
+<button onclick="display2()"> click </button>
+
+<script>
+ function display2() {
+            const name=["raj","mohna","pankay","ramu"]
+            var a=name.unshift("yaaa")
+            document.getElementById("demo4").innerHTML=name;  //yaaa,raj,mohna,pankay,ramu
+            document.getElementById("demo5").innerHTML=a;  //5
+        }
+</script>
+    
+</body>
+</html>

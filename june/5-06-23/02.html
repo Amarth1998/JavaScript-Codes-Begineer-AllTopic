@@ -1,0 +1,24 @@
+replace:
+1.The replace() method replace a specified value with another value in a string. retuen new string
+2.Replace methis only replace first match.
+3.To replace all matchs use a regular expression with /g flag (global match)
+4.To replace case insensitive ,use a regular expression with /i flag
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>JavaScrip  String Methods</h2>
+    <p id="demo"></p>
+    <script>
+        var str = "Hello we are sati student  sati ";
+        var str1 = "Hello we are sati student  SATI ";
+       //document.getElementById("demo").innerHTML = "<h1>"+str.replace("sati","amarth")+"</h1>";  //Hello we are amarth student cybrom
+// document.getElementById("demo").innerHTML = "<h1>"+str.replace(/sati/g,"amarth")+"</h1>";  //Hello we are amarth student amarth
+
+
+document.getElementById("demo").innerHTML = "<h1>"+str1.replace(/sati/gi,"amarth")+"</h1>";  //Hello we are amarth student amarth
+       
+        </script>
+</body>
+</html>

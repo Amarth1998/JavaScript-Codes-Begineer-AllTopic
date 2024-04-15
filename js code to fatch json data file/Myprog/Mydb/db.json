@@ -1,0 +1,29 @@
+{
+"student":[
+    {
+        "rollno":103,
+        "name" : "sunil",
+        "address":"vidisha",
+        "fees" :20000
+    },
+    {
+        "rollno":102,
+        "name" : "akash",
+        "address":"bhopal",
+        "fees" :30000
+    },
+    {
+        "rollno":121,
+        "name" : "karan",
+        "address":"indore",
+        "fees" :34000
+    },
+    {
+        "rollno":123,
+        "name" : "deepak",
+        "address":"betul",
+        "fees" :27000
+    }
+
+]
+}
